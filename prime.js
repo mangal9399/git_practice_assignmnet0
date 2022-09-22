@@ -1,12 +1,13 @@
-function prime(num){
-    counter = 0;
-    for (let i=1; i<=num; i++) {
-        if ( num % i == 0) {
-            counter++;
+
+function prime(number){
+    let factor =0;
+    for(let i=1;i<=number;i++){
+        if(number%i==0){
+            factor++;     
         }
     }
-    if (counter === 2) {
-          return true;
+    if(factor ==2){
+        return true
     }
     return false;   
 }
@@ -19,3 +20,4 @@ if (answer == true) {
 else {
     console.log("Not Prime");
 }
+
