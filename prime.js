@@ -1,21 +1,23 @@
+
 function prime(number){
     let factor =0;
     for(let i=1;i<=number;i++){
         if(number%i==0){
-            factor++;
-            
+            factor++;     
         }
     }
     if(factor ==2){
-        return true;
+        return true
     }
     return false;   
 }
 
-let ans=prime(13)
-if(ans==true){
-    console.log("Prime")
+let answer = prime(17);
+
+if (answer == true) {
+    console.log("prime");
 }
-else{
-    console.log("Not Prime")
+else {
+    console.log("Not Prime");
 }
+
